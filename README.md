@@ -40,8 +40,10 @@ To set up the Diwali Wishes App locally, follow these steps:
 4. **Set up environment variables**: 
    
    Create a .env file in the root directory of your project and add the following line:
-
+   
+   ```plaintext
    VITE_SERVER_URL=http://localhost:5000
+   ```
 
    
 4. **Start the development server**:
