@@ -1,0 +1,71 @@
+.fireworks-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100; /* Ensure it's behind the Canvas */
+  }
+  
+
+  .message-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Adjust color as needed */
+    text-align: center;
+    z-index: 1; /* Ensure text is above the canvas */
+    padding: 20px; /* Add some padding for better readability */
+  }
+  
+  .message-container h1 {
+    font-size: 3rem; /* Adjust size as needed */
+    margin: 0;
+    margin-bottom: 20px; /* Add margin to create space between title and wish */
+    color: #ffcc00; 
+    text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.8);
+  }
+  
+  .wish-message {
+    font-size: 1.2rem; /* Base font size */
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Spacing around the message */
+    color: white; /* Text color */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 600px) {
+    .wish-message {
+      font-size: 1rem; /* Smaller font size on mobile */
+      padding: 10px; /* Reduced padding */
+    }
+    .message-container{
+      width:90%;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 900px) {
+    .wish-message {
+      font-size: 1.1rem; /* Medium font size on tablet */
+      padding: 12px; /* Slightly reduced padding */
+    }
+  }
+  
+  @media (min-width: 901px) {
+    .wish-message {
+      font-size: 1.3rem; /* Larger font size on desktop */
+      padding: 15px; /* Normal padding */
+    }
+  }
+  
+  
+  .name {
+    font-size: 1.5rem; /* Same size as the wish message */
+    margin-top: 10px; /* Add space above the name */
+    text-align: right; /* Align name to the right */
+    color: #4caf50;
+  }
+  

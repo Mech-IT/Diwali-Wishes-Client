@@ -1,0 +1,76 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 300px;
+  position: relative; /* Added for positioning close icon */
+}
+
+.modal-header {
+  position: relative;
+}
+
+.close-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  fill: #f44336; /* Red color for close icon */
+  position: absolute;
+  top: -33px;
+  right: -15px;
+}
+
+.modal-input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal-submit {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #ff4081, #ffeb3b); /* Colorful gradient */
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.modal-submit:hover {
+  background: linear-gradient(45deg, #ff80ab, #ffe57f); /* Lighter gradient on hover */
+}
+
+
+.loader {
+  border: 2px solid #f3f3f3; /* Light grey */
+  border-top: 2px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 16px; /* Size of the loader */
+  height: 16px; /* Size of the loader */
+  animation: spin 1s linear infinite;
+  display: inline-block; /* To align with text */
+  margin-right: 5px; /* Space between loader and text */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
